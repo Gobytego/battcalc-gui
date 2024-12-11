@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
-import tkinter as tk
+try:
+    import tkinter as tk
+except ImportError:
+    print("Python-Tk is not installed. Please install it using your package manager (e.g., 'pip install tk') or system package manager (e.g., 'sudo apt install python3-tk')")
+    exit(1)
 
 def calculate():
     try:
